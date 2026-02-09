@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Foto filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ODER 9:16 -->
+  <div class="stage" id="stage">
+    <video id="video" autoplay playsinline muted></video>
+    <img id="overlay" src="crna.png" class="overlay" alt="filter overlay">
+    <div id="stickers"></div>
+  </div>
+
+  <!-- IZBIRA FILTRA -->
+  <div class="filters">
+    <button class="filter active" data-img="crna.png">Hoodie 1</button>
+    <button class="filter" data-img="zelen.png">Hoodie 2</button>
+    <button class="filter" data-img="halja.png">Laboratorijska halja</button>
+  </div>
+
+  <!-- KONTROLE -->
+  <div class="controls">
+    <button id="shot">📸 Fotografiraj</button>
+    <button id="download" disabled>⬇️ Prenesi sliko</button>
+    <button id="flip">🔄 Obrni kamero</button>
+
+    <div class="row">
+      <button id="deleteSelected" class="danger">🗑 Izbriši nalepko</button>
+      <button id="clearAll" class="danger">🧹 Počisti vse</button>
+    </div>
+
+    <div class="hint">
+      Fotografiraj → preveri → Prenesi sliko<br>
+      1 prst: premik · 2 prsta: pinch + rotacija
+    </div>
+
+    <!-- BESEDILNE NALEPKE -->
+    <div class="section-title">NAPISI</div>
+    <div class="text-stickers">
+      <button>BIOTEHNIŠKA GIMNAZIJA</button>
+      <button>KMETIJSKO-PODJETNIŠKI TEHNIK</button>
+      <button>NARAVOVARSTVENI TEHNIK</button>
+      <button>GOSPODAR NA PODEŽELJU</button>
+      <button>MEHANIK KMETIJSKIH IN DELOVNIH STROJEV</button>
+      <button>VRTNAR</button>
+      <button>CVETLIČAR</button>
+      <button>SLAŠČIČAR</button>
+      <button>MESAR</button>
+      <button>KMETIJSKO-PODJETNIŠKI TEHNIK (PTI)</button>
+      <button>HORTIKULTURNI TEHNIK (PTI)</button>
+      <button>POMOČNIK V BIOTEHNIKI IN OSKRBI</button>
+    </div>
+
+    <!-- EMOJIJI -->
+    <div class="section-title">EMOJIJI</div>
+    <div class="emojis">
+      <button>♻️</button><button>🌳</button><button>🍀</button><button>💚</button>
+      <button>🧪</button><button>🔬</button><button>🧫</button><button>🥼</button>
+      <button>🚜</button><button>🐄</button><button>🐴</button><button>🐓</button>
+      <button>🍎</button><button>🥛</button><button>🧁</button><button>🎂</button>
+      <button>🍪</button><button>🍗</button><button>🥬</button><button>🥩</button>
+      <button>🎓</button><button>📚</button>
+      <button>🕶️</button><button>🥽</button><button>👓</button><button>🤩</button>
+      <button>👍</button><button>🫶</button><button>🌸</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
